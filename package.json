@@ -7,7 +7,6 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^8.4.2",
-    "@sap/xssec": "^4.2.7",
     "express": "^4",
     "sqlite3": "^5.1.7"
   },
@@ -24,14 +23,14 @@
     "requires": {
       "db": {
         "kind": "sqlite"
+      },
+      "auth": {
+        "kind": "none"
       }
     },
     "features": {
       "fiori_preview": true,
       "preview": true
-    },
-    "auth": {
-      "kind": "dummy"
     }
   }
 }
