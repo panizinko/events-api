@@ -28,9 +28,11 @@
         "kind": "dummy"
       }
     },
-    "features": {
-      "fiori_preview": true,
+    "fiori": {
       "preview": true
+    },
+    "server": {
+      "index": true
     }
   }
 }
