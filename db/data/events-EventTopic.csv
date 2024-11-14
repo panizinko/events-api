@@ -1,0 +1,5 @@
+ID,name,event_topic_id,event_topic_name,consumer_lag
+1,Order_Events,101,orders.created,50
+2,Payment_Events,102,payments.processed,25
+3,Shipping_Events,103,shipments.status,75
+4,User_Events,104,users.registered,10

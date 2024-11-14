@@ -1,0 +1,5 @@
+ID,description,producer_ID,consumer_ID
+1,"Message format validation failed",1,1
+2,"Schema version mismatch",1,2
+3,"Payload parsing error",2,3
+4,"Missing required fields",3,4
