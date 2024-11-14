@@ -1,10 +1,7 @@
-// data-generator.js
 const fs = require("fs");
 
-// Helper function to generate random items from array
 const randomFrom = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
-// Constants for data generation
 const COUNTS = {
   PRODUCERS: 20,
   CONSUMERS: 100,
@@ -13,7 +10,6 @@ const COUNTS = {
   INVALID_EVENTS: 100,
 };
 
-// Sample data arrays
 const sources = [
   "Kafka",
   "RabbitMQ",
@@ -80,7 +76,6 @@ const generateProducers = () => {
   return data;
 };
 
-// Generate Consumers
 const generateConsumers = () => {
   let data = "ID,name,producer_id_ID\n";
   for (let i = 1; i <= COUNTS.CONSUMERS; i++) {
@@ -109,7 +104,6 @@ const generateEventTopics = () => {
   return data;
 };
 
-// Generate Events
 const generateEvents = () => {
   let data = "ID,name,event_topic_id_ID\n";
   for (let i = 1; i <= COUNTS.EVENTS; i++) {
@@ -121,7 +115,6 @@ const generateEvents = () => {
   return data;
 };
 
-// Generate Invalid Events
 const generateInvalidEvents = () => {
   let data = "ID,description,producer_ID,consumer_ID\n";
   const errors = [
@@ -165,8 +158,7 @@ const generateFiles = () => {
     generateInvalidEvents()
   );
 
-  console.log("Sample data generated successfully!");
+  console.log("success!");
 };
 
-// Execute
 generateFiles();
