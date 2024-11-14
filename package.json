@@ -16,7 +16,7 @@
     "@sap/cds-dk": "^8.4.1"
   },
   "scripts": {
-    "start": "cds run --in-memory?",
+    "start": "cds deploy --to sqlite:db.sqlite && npx cds run",
     "build": "cds build"
   },
   "cds": {
