@@ -25,7 +25,7 @@
         "kind": "sqlite"
       },
       "auth": {
-        "kind": "none"
+        "kind": "dummy"
       }
     },
     "features": {
