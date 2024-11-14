@@ -12,7 +12,8 @@
   },
   "devDependencies": {
     "@cap-js/cds-types": "^0.7.0",
-    "@cap-js/sqlite": "^1"
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^8.4.1"
   },
   "scripts": {
     "start": "cds run --in-memory?",
