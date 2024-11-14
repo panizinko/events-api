@@ -18,5 +18,19 @@
   "scripts": {
     "start": "cds run --in-memory?",
     "build": "cds build"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite"
+      }
+    },
+    "features": {
+      "fiori_preview": true,
+      "preview": true
+    },
+    "auth": {
+      "kind": "dummy"
+    }
   }
 }
